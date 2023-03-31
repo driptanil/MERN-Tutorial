@@ -1,0 +1,18 @@
+{
+  "name": "00-basics",
+  "version": "1.0.0",
+  "description": "learning nodeJS",
+  "main": "modules/file-based/index.js",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.8.7"
+  },
+  "dependencies": {
+    "pokemon": "^2.3.4"
+  }
+}
