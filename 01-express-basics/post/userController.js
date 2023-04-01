@@ -5,6 +5,9 @@ const registerUser = (request, response) => {
 
     response.json({
         success: true,
+        name: request.body.name,
+        email: request.body.email,
+        password: request.body.password,
     })
 }
 

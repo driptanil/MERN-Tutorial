@@ -9,9 +9,6 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "prettier": "2.8.7"
-  },
   "dependencies": {
     "pokemon": "^2.3.4"
   }
