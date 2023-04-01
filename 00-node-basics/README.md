@@ -363,7 +363,7 @@ added 3 packages, and audited 5 packages in 5s
 
 - Output
   ```shell
-	  ╭─ npm start
+  ╭─ npm start
 	
  	> 00-basics@1.0.0 start
  	> node ./server/index.js
