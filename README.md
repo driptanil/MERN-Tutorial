@@ -1,14 +1,15 @@
-![](./images/cover.png)
+![](./images/banner.jpg)
 
-# Node JS
+# MERN Stack Tutorial
 
-Node JS is a javascript runtime built on Google's Open Source V8 Javascript Engine.
-
--   [Node JS Installer](https://nodejs.org/en/download/)
--   [Node JS Documentation](https://nodejs.org/en/docs/)
+This includes Repository includes my personal notes, and cover important topics that you need to know about MERN stack except ReactJS( which is present in https://github.com/driptanil/Frontend along with HTML, CSS, JS)
 
 ## Learn:
 
+##### A huge shoutout to Abhishek Singh aka **[6 Pack Programmer](https://www.youtube.com/@6PackProgrammer)** [@meabhisingh](https://github.com/meabhisingh) for this excellent teaching skills and tutorials.
+
+- Youtube : https://www.youtube.com/@6PackProgrammer
+- GitHub: https://github.com/meabhisingh
 <table>
     <thead align="center">
         <tr border: none;>
@@ -19,14 +20,24 @@ Node JS is a javascript runtime built on Google's Open Source V8 Javascript Engi
     </thead>
     <tbody>
         <tr>
-            <td><a href="https://github.com/driptanil/Node-JS-Tutorial/tree/main/00-node-basics">00-Node-Basics</a></td>
+            <td><a href="https://github.com/driptanil/MERN-Tutorial/tree/main/00-node-basics">00-Node-Basics</a></td>
             <td><img src="https://progress-bar.dev/100?title=✅⠀"> </td>
             <td><a href="https://www.youtube.com/watch?v=BSO9C8Z-YV8">6 Pack Programmer Youtube</a></td>
             </tr>
-            <tr>
-            <td><a href="https://github.com/driptanil/Node-JS-Tutorial/tree/main/01-express-basics">01-Express-Basics</a></td>
+		<tr>
+            <td><a href="https://github.com/driptanil/MERN-Tutorial/tree/main/01-express-basics">01-Express-Basics</a></td>
             <td><img src="https://progress-bar.dev/100?title=✅⠀"> </td>
             <td><a href="https://www.youtube.com/watch?v=teipbke8c4A">6 Pack Programmer Youtube</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/driptanil/MERN-Tutorial/tree/main/02-mongoDB">02-MongoDB</a></td>
+            <td><img src="https://progress-bar.dev/100?title=✅⠀"> </td>
+            <td><a href="https://www.youtube.com/watch?v=AYDP1S5BbTo">6 Pack Programmer Youtube</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/driptanil/MERN-Tutorial/tree/main/03-restapi">03-RestAPI</a></td>
+            <td><img src="https://progress-bar.dev/100?title=✅⠀"> </td>
+            <td><a href="https://www.youtube.com/watch?v=AhCSfuG9Jxw">6 Pack Programmer Youtube</a></td>
         </tr>
     </tbody>
 </table>
