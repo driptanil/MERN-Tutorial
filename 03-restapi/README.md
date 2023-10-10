@@ -151,3 +151,58 @@ app.delete("/api/v1/product/:id", async (request, response) => {
 ![](./images/deleteProduct.png)
 ![](./images/allProductsAfterDelete.png)
 ![](./images/finalMongo.png)
+
+### Adding Backend Validation using YUP
+
+14. Installing `yup` package for validation using `npm install yup`.
+
+15. Defining the schema to product, `/validation/validateProduct.js`,
+
+```javascript
+const yup = require("yup");
+
+const productSchema = yup.object({
+    name: yup.string().required().min(5).max(30),
+    description: yup.string().min(10).max(100).required(),
+    price: yup.number().required().max(10),
+});
+
+module.exports = productSchema;
+```
+
+16. Creating a middleware that takes schema as parameter, to validate the request with the schema, `/middleware/validateMiddleWare.js`
+    
+```javascript
+const validation = (schema) => async (request, response, next) => {
+    const body = request.body;
+    
+    try {
+        await schema.validate(body);
+        next();
+        // next() is used to keep moving forward
+    } catch (error) {
+        return response.status(422).json({ error: error });
+    }
+};
+
+module.exports = validation;
+```
+
+17. Importing `validation()` and `schema` in `app.js`, and in Rest API functions call, add `validation(schema)` as parameter. 
+    
+```javascript
+const validation = require("./middleware/validateMiddleware");
+const validateSchema = require("./validation/validateProduct");
+
+app.post(
+    "/api/v1/product/new",
+    validation(validateSchema),
+    async (request, response) => {
+        const product = await Product.create(request.body);
+        response.status(201).json({
+            success: true,
+            product,
+        });
+    }
+);
+```
